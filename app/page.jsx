@@ -1,4 +1,4 @@
-import { Activity, CreditCard, DollarSign, Download, Users } from "lucide-react"
+import { Activity, Component, CreditCard, DollarSign, Download, Users } from "lucide-react"
 import {
   Card,
   CardContent,
@@ -9,6 +9,9 @@ import {
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Overview } from "@/components/Overview"
 import { RecentSales } from "@/components/dashboard/recent-sales"
+// import { ChatLayout } from "@/components/Chat/chat-layout"
+// import Room from "@/components/chat/chat"
+
 
 export default function DashboardPage() {
   return (
@@ -96,6 +99,11 @@ export default function DashboardPage() {
                     <Overview />
                   </CardContent>
                 </Card>
+    <Card>
+
+{/* <Room/> */}
+
+    </Card>
                 <Card className="col-span-3">
                   <CardHeader>
                     <CardTitle>Recent Sales</CardTitle>

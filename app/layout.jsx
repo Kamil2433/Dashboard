@@ -2,6 +2,8 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import { MainNav } from "@/components/dashboard/main-nav"
 import { Button } from "@/components/ui/button"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+
 
 
 
@@ -20,6 +22,15 @@ export default function RootLayout({ children }) {
           <div className="flex h-16 items-center px-4">
             <MainNav className="mx-6" />
             <div className="ml-auto flex items-center space-x-4">
+
+
+              <></>
+
+              <Avatar>
+  <AvatarImage src="" />
+  <AvatarFallback>CN</AvatarFallback>
+</Avatar>
+
               <Button>
                 Log out
               </Button>
